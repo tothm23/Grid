@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+body {
+  background-color: black;
+}
+
+#alap {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-areas:
+    "header header header header header header"
+    "header header header header header header"
+    "nav nav nav nav nav nav"
+    "main main main main main main"
+    "main main main main main main"
+    "main main main main main main"
+    "article article section section aside aside"
+    "article article section section aside aside"
+    "article article section section aside aside"
+    "article article section section aside aside"
+    "footer footer footer footer footer footer"
+    "footer footer footer footer footer footer";
+  gap: 2vh;
+}
+
+header {
+  background-color: aliceblue;
+  grid-area: header;
+}
+
+nav {
+  background-color: antiquewhite;
+  grid-area: nav;
+}
+
+main {
+  background-color: aqua;
+  grid-area: main;
+}
+
+article {
+  background-color: aquamarine;
+  grid-area: article;
+}
+
+section {
+  background-color: azure;
+  grid-area: section;
+}
+
+aside {
+  background-color: beige;
+  grid-area: aside;
+}
+
+footer {
+  background-color: bisque;
+  grid-area: footer;
+}
+
+header,
+nav,
+main,
+article,
+section,
+aside,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

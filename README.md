@@ -1,2 +1,3 @@
 # Grid
- A grid rendszer alapjait szemlélteti
+
+A grid rendszer alapjait szemlélteti
